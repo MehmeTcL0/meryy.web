@@ -8,7 +8,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #ffc0cb; /* Pembe arka plan */
+            background-color: #ffc0cb;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,15 +23,26 @@
             text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
             max-width: 90%;
         }
+
+        .yt-music {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            opacity: 0;
+            pointer-events: none;
+        }
     </style>
 </head>
 <body>
     <h1>Toprak Altına Gömülmüş Bir Anı Sayfası 🙃</h1>
 
-    <!-- Otomatik müzik çalar -->
-    <audio autoplay loop>
-        <source src="Сергей Шнуров-Почти любовь (из фильма Бумер.Фильм второй)_1.mp3" type="audio/mpeg">
-        Tarayıcınız müziği desteklemiyor.
-    </audio>
+    <!-- YouTube müzik gizli oynatıcı -->
+    <iframe 
+        class="yt-music"
+        src="https://www.youtube.com/embed/ryFHIterOKc?autoplay=1&loop=1&playlist=ryFHIterOKc"
+        frameborder="0"
+        allow="autoplay"
+        allowfullscreen>
+    </iframe>
 </body>
 </html>
