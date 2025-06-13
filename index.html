@@ -1,101 +1,37 @@
 <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toprak Altındaki Anı</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffc0cb; /* Pembe arka plan */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #4b1e2f;
+            text-align: center;
+        }
 
-<html lang="en">
+        h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Toprak Altına Gömülmüş Bir Anı Sayfası 🙃</h1>
 
-    <head>
-
-        <meta charset="UTF-8">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="valentine-confession.css">
-
-        <title>O'na Özel "M" <3 '</title>
-
-    </head>
-
-    <body>
-
-        <p class="instruction">Kalbin Üzerine Tıkla!</p>
-
-        <div class="container">
-
-            <label>
-
-            <div class="heart">
-
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg"></img>
-
-            </div>
-
-            <input id="messageState" type="checkbox" style="display:none"/>
-
-            </label>
-
-            <div class="message">
-
-                <h1 style="font-family: Cinzel, serif; font-size: 40px; letter-spacing: 1.2px;">Meryem'e,</h1>
-
-                <p> 
-
-                    <span>
-
-                        &emsp; Biliyorum, bu biraz beklenmedik. Ama seni gördüğüm günden beri içimde "bir şey söylemeliyim" hissi var. Belki hiç farkında bile değilsin ama seninle aynı okulda olmak, bazen seni uzaktan da olsa görmek… garip ama güzel bir şey hissettirdi.                    </span>
-
-                    <br> <br>
-
-                    <span>
-
-                        &emsp;  Büyük laflar etmeyeceğim. Tanımadan “şöylesin böylesin” demek anlamsız olur. Ama bir şey söylemek gerekiyordu, çünkü içime atıp geçmek istemedim. Hoşuma gittin. Gerçekten. Hem enerjin, hem duruşun… ve evet, henüz konuşmadık ama bir insanın varlığı bile bazen çok şey hissettirebiliyor. Ama bil ki, birinin kalbinde güzel bir yer edindin. Ve bu yazıyı okuduysan… artık bir hikâyenin başlama ihtimali var.                    </span>      
-
-                </p>
-
-                <br>
-
-                <div class="sincere">
-
-                    <p style="font-weight: bold;"> Sevgilerle,</p>
-
-                    <p>Mehmet Can</p>
-
-                 </div>
-
-            </div>
-
-        </div>
-
-        
-
-        <script src="jquery.js"></script>
-
-        <script src="jquery2.1.js"></script>
-
-        <script defer src="valentine-confession.js"></script>
-
-        <audio id="bg-music" 
-        src="Sezen Aksu - İkinci Bahar (Official Audio)_1.mp3"></audio>
-
-        <script>
-           const heart = 
-        document.querySelector('.heart');
-           const music = 
-        document.getElementById('bg-music');
-            
-           heart.addEventListener('click', () => {
-   
-               music.play();
-       });
-</script>
-        
-    </body>
-
+    <!-- Otomatik müzik çalar -->
+    <audio autoplay loop>
+        <source src="Сергей Шнуров-Почти любовь (из фильма Бумер.Фильм второй)_1.mp3" type="audio/mpeg">
+        Tarayıcınız müziği desteklemiyor.
+    </audio>
+</body>
 </html>
-
-
-
